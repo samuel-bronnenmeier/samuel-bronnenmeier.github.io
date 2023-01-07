@@ -8,3 +8,46 @@
 
 	font-family: "Space Mono", monospace;
 }
+
+/* Hero section */
+div#hero-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1.3fr 0.5fr 1.2fr;
+
+	justify-content: space-around;
+
+	height: 100vh;
+}
+
+div#hero-section div.statement {
+	display: flex;
+	align-items: flex-end;
+	margin-left: 20vw;
+
+	font-size: 1.25rem;
+}
+
+div#hero-section h1 {
+	grid-area: 2 / 1 / 2 / 3;
+
+	font-size: 3.5rem;
+	margin-left: 20vw;
+}
+
+div#hero-section div.footnote {
+	display: flex;
+	justify-items: flex-start;
+	align-items: flex-end;
+}
+
+div#hero-section img.portrait {
+	grid-area: 1 / 2 / 4 / 2;
+
+	height: inherit;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	z-index: -1;
+}

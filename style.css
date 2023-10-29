@@ -9,6 +9,12 @@
 	font-family: "Space Mono", monospace;
 }
 
+body {
+	background-color: black;
+	color: white;
+	color-scheme: dark;
+}
+
 /* Hero section */
 div#hero-section {
 	/* display: grid;
@@ -49,4 +55,33 @@ div#hero-section div.footnote {
 	display: flex;
 	justify-items: flex-start;
 	align-items: flex-end;
+}
+
+/*
+-----slides-----
+*/
+
+div#info-section {
+	margin: 2em;
+	margin-top: 3em;
+
+	padding: 2em;
+
+	background-color: white;
+}
+
+div.slide {
+	background-color: black;
+	padding: 1em;
+}
+
+div.slide#who {
+}
+
+div.slide#what {
+	display: none;
+}
+
+div.slide#why {
+	display: none;
 }

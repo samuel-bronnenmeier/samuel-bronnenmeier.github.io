@@ -55,6 +55,8 @@ div#hero-section div.footnote {
 	display: flex;
 	justify-items: flex-start;
 	align-items: flex-end;
+
+	font-size: 0.8rem;
 }
 
 /*
@@ -65,7 +67,7 @@ div#info-section {
 	margin: 2em;
 	margin-top: 3em;
 
-	padding: 2em;
+	padding: 1.5em;
 
 	background-color: white;
 }
@@ -73,6 +75,8 @@ div#info-section {
 div.slide {
 	background-color: black;
 	padding: 1em;
+
+	min-height: 75vh;
 }
 
 div.slide#who {
@@ -84,4 +88,29 @@ div.slide#what {
 
 div.slide#why {
 	display: none;
+}
+
+div.slide h2.title {
+	margin-left: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+div.slide#who div.content {
+	font-size: 1rem;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/* grid-template-rows: 1fr 1fr; */
+}
+
+div.slide#who div.content pre span.prop {
+	color: #55b3ee;
+}
+
+div.slide#who div.content div.image {
+	grid-area: 2 / 1 / span 1 / span 2;
+
+	margin: auto;
+
+	text-align: center;
 }
